@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelD", "HotelD\HotelD.csproj", "{19ED9907-EC2E-461A-A3E2-2189F6387638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.BLL", "Hotel.BLL\Hotel.BLL.csproj", "{281E01C2-CA48-49AB-B907-1830ECAB7E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHotel", "TestHotel\TestHotel.csproj", "{2F6F25E9-7375-41E9-BC59-457E2E10BF80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19ED9907-EC2E-461A-A3E2-2189F6387638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19ED9907-EC2E-461A-A3E2-2189F6387638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19ED9907-EC2E-461A-A3E2-2189F6387638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19ED9907-EC2E-461A-A3E2-2189F6387638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281E01C2-CA48-49AB-B907-1830ECAB7E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281E01C2-CA48-49AB-B907-1830ECAB7E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281E01C2-CA48-49AB-B907-1830ECAB7E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281E01C2-CA48-49AB-B907-1830ECAB7E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6F25E9-7375-41E9-BC59-457E2E10BF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6F25E9-7375-41E9-BC59-457E2E10BF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6F25E9-7375-41E9-BC59-457E2E10BF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6F25E9-7375-41E9-BC59-457E2E10BF80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {888C6AE1-FF10-44FF-8554-E5413242C745}
+	EndGlobalSection
+EndGlobal

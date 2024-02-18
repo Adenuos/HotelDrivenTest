@@ -1,0 +1,21 @@
+﻿@page
+@model ConfirmationModel
+@{
+    ViewData["Title"] = "Booking Confirmation";
+}
+
+<h1>Booking Confirmation</h1>
+
+@if (Model.IsRoomBooked)
+{
+    <p>Your room has been booked successfully!</p>
+    <p>Room Type: @Model.SelectedRoomType</p>
+    <p>Room ID: @Model.SelectedRoomId</p>
+    <p>Check-in Date: @Model.CheckInDate.ToShortDateString()</p>
+    <p>Check-out Date: @Model.CheckOutDate.ToShortDateString()</p>
+}
+else
+{
+    <p>There was an error while booking the room. Please try again later.</p>
+}
+

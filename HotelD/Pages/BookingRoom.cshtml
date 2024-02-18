@@ -1,0 +1,46 @@
+﻿@page
+@model BookingRoomModel
+@{
+    ViewData["Title"] = "Book Room";
+}
+<h1>Book Room</h1>
+
+<form method="post" asp-action="Search">>
+    <label for="checkInDate">Check-in Date:</label>
+    <input type="date" id="checkInDate" asp-for="CheckInDate">
+
+    <label for="checkOutDate">Check-out Date:</label>
+    <input type="date" id="checkOutDate" asp-for="CheckOutDate">
+
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" asp-for="SelectedRoomType">
+        <option value="Single">Single</option>
+        <option value="Double">Double</option>
+    </select>
+
+    <button type="submit" name="searchButton">Search</button>
+</form>
+
+@if (Model.AvailableRooms != null && Model.AvailableRooms.Any())
+{
+    <h2>Available Rooms</h2>
+    <ul>
+        @foreach (var room in Model.AvailableRooms)
+        {
+            <li>
+                @room.Type - @(room.Price * this.Model.TotalDays)$
+            <form method="post" asp-page-handler="Book">
+                <input type="hidden" name="SelectedRoomId" value="@room.Id" />
+                <input type="hidden" name="CheckInDate" value="@Model.CheckInDate" />
+                <input type="hidden" name="CheckOutDate" value="@Model.CheckOutDate" />
+                <button type="submit">Book @room.Type</button>
+            </form>
+        </li>
+    }
+    </ul>
+}
+else
+{
+    <p>No available rooms matching the criteria.</p>
+}
+
